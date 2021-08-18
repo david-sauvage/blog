@@ -24,6 +24,8 @@ var embedConfig = {
 
 module.exports = {
   siteName: 'David-Sauvage',
+  siteUrl: 'https://david-sauvage.github.io',
+  pathPrefix: '/blog',
   permalinks: {
     trailingSlash: false
   },
