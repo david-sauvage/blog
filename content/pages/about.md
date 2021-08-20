@@ -16,4 +16,4 @@ sidebar: true
 
 ## Technicalities
 
- This blog is build with [gridsome](https://gridsome.org/)
+ This blog is built with [gridsome](https://gridsome.org/)
