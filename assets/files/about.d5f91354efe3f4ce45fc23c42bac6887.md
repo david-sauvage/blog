@@ -11,9 +11,9 @@ sidebar: true
 
 ## Home
 
- Beside work, I'm a huge sports fan : football (european ;)) and NBA being my favorites sports to follow. I like the tactical aspect of it. I practice running and yoga pretty often and being a former table tennis player made me love pretty much every racket sports
+ Beside work, I'm a huge sports fan : football (european ;)) and NBA being my favorites sports to follow. I like the tactical aspect of it. I practice running and yoga pretty often and being a former table tennis player made me love pretty much every racket sports.
  I also like reading, mostly science fiction and love to play a bit of video games when there is still a little bit of time in my schedule.
 
 ## Technicalities
 
- This blog is build with [gridsome](https://gridsome.org/)
+ This blog is built with [gridsome](https://gridsome.org/)
