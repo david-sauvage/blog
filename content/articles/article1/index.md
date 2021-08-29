@@ -1,16 +1,16 @@
 ---
-title: Should I test private methods direclty ?
+title: Should I test private methods directly ?
 tags: testing, good practices
 excerpt: While working on legacy code a colleague used reflection to unit test private methods. I needed to gather my thoughts as to why this is a bad practice.
 createdAt: 2021-08-03 00:00:00
 ---
 
 
-## Why this question poped up ?
+## Why this question popped up ?
 
 During a code review, one of my new coworker used reflection in order to test some private methods. To give some context, we are working on a bit of legacy code were some part of the software lack unit tests and in order for that to change we decided to add tests for every methods that we would tweak while developing new features.
 
-I have to admit that the idea of testing private methods never came to mind so even though I was a bit taken off by it instinctively, I did not had any good argument against it so I did what every developer do when he has a question : ask Google ! This article is simply a sum up of my reads and what my conviction is after reading them.
+I have to admit that the idea of testing private methods never crossed my mind so even though I was a bit taken off by it instinctively, I did not had any good argument against it so I did what every developer do when he has a question : ask Google ! This article is simply a sum up of my readings ads and what my conviction is after reading them.
 
 ## Pros and con of testing private methods
 
@@ -20,7 +20,7 @@ It probably hits you already with how I described the situation but if you feel 
 
 Keep in mind that your unit tests are the first client to your public api. Testing your code through it shows how it should be used. A great tests suite is a great documentation. It evolves with your code by design and can be a great help for newcomers to understand how a class has been designed.
 
-Another great argument against testing private method is that you will create redundancy in your tests. Since you will both test the private methods and the public ones, your test suite will trigger your private method twice : first by their own test and then by the public ones. Those tests will look really look like one another since it will test the same expected results. Having this kind of bloated tests suite will slow you down eventually. Moreso, it will make refactoring harder and will defeat one of the main purpose of unit tests : make refactoring smooth and easy ! Needing a simple change in one private method now makes you getting at least 2 broken tests instead of one. It will have repercussions on your team velocity.
+Another great argument against testing private method is that you will create redundancy in your tests. Since you will both test the private methods and the public ones, your test suite will trigger your private method twice : first by their own test and then by the public ones. Those tests will really look like one another since it will test the same expected results. Having this kind of bloated tests suite will slow you down eventually. Moreso, it will make refactoring harder and will defeat one of the main purpose of unit tests : make refactoring smooth and easy ! Needing a simple change in one private method now makes you getting at least 2 broken tests instead of one. It will have repercussions on your team velocity.
 
 ## Conclusion
 
