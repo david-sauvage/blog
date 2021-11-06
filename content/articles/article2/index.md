@@ -1,97 +1,38 @@
 ---
-title: Est earum quaerat molestias natus deleniti quos culpa eum
-tags: ['tag3', 'tag4']
-excerpt: Dolore harum rem. Ut aut non accusamus. Autem corrupti ut laborum omnis. Ut necessitatibus iusto aliquam.
-createdAt: 2019-11-02 11:26:00
+title: Mimic the good practices in which you believe
+tags: engineering, technical leadership, good practices
+excerpt: "I’ve been reading two different books: Los 11 caminos al goal and Code Simplicity The first one is about Marcelo Bielsa while the second is giving tips about how to design in software engineering. Those two books inspired me to write this article."
+createdAt: 2021-11-06 00:00:00
 ---
 
-## Ipsum fugit ab dolor nesciunt magnam
+Recently, I’ve been reading two different books: Los 11 caminos al goal by Eduardo Rojas Rojas and Code Simplicity by Max Kanat-Alexander. The first one is about Marcelo Bielsa, one of the great tacticians in the football world while the second is giving tips about how to design in our field: software engineering. Those two books inspired me to write this article.
 
-**Pellentesque habitant morbi tristique** senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. _Aenean ultricies mi vitae est._ Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, `commodo vitae`, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. [Donec non enim](#) in turpis pulvinar facilisis. Ut felis.
+Marcelo Bielsa inspired great coaches such as Mauricio Pochettino, Jorge Sampaoli or even Pep Guardiola. Despite the fact that Bielsa is seen as a genius in his field by a numerous number of people, he feels like he simply imitates what is properly done. For him, imitation is the basis of education insofar as one imitates things in which one believes. This has remained anchored in me because it corresponds enormously to what I do on a daily basis in my development team.
+Code simplicity incorporates many development principles to produce maintainable software. Although I don’t think I learned much from it, it sums up so many principles which I believe to be an interesting read. It is very short and it is always good to do a reminder of the basics
+Those two books gave me the idea to share the development principles I have been copying the past years of my career. I try to instill them in other members of my team and I’m a firm believer that it creates more maintainable software.
 
-1.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-2.  Aliquam tincidunt mauris eu risus.
+## Consistency, consistency, consistency
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+It has been a joke for a while in my previous team but I’ve brought back how important it is to stay consistent. It may seem boring to use the same method when it comes to responding to a redundant technical point, but for me, consistency is one of the pillars of software maintainability. It is important to imagine yourself as a newcomer to your project and to make his life easier for his integration. If he has to learn 3 different libraries to make HTTP calls while he also has to integrate the operations of the team and the software, his onboarding will necessarily be slowed down. It is simply an unnecessary load for him. Of course, sometimes you will have to change the way you do things. Technology evolves and if you don’t evolve with it, you will have a maintainability issue. It needs to be a thoughtful process and you should aim to only have this new way in the long run.
 
-### Aliquid nihil laudantium debitis saepe
+## Boy Scout rule
 
-*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-*   Aliquam tincidunt mauris eu risus.
+The boy scout rule is kind of self-explanatory: Always leave the campground cleaner than you found it (Robert C. Martin). Whenever you have to modify your code, look for elements that can be improved within the existing one. Don’t try to make the whole thing perfect, but try to improve one of these elements. In the long run, the whole codebase will improve and make your software better. It could simply be to rename some method or variable more explicitly, add a missing unit test, or revise an unclear algorithm. The sum of small improvements will result in better software.
 
-```js{3,4,15-25}
+## You’re not gonna need it (YAGNI Principle)
 
-import {x, y} as p from 'point';
-const ANSWER = 42;
+As said by Max Kanat-Alexander in the book I mentioned earlier: You can’t predict the future. Everybody will agree on that one but as software engineers, we do tend to try and we shouldn’t! We all thought it would be good to add this or that element to a requested feature. We think then that it will necessarily be useful later. Spoiler alert: We are wrong! It is impossible to predict what software will need or how it will be used. You are not Nostradamus, only add what is essential to your software.
 
-class Car extends Vehicle {
-  constructor(speed, cost) {
-    super(speed);
+## Worse is better
 
-    var c = Symbol('cost');
-    this[c] = cost;
+Worse is better means that you should not seek to make your software better by adding all features that you have in mind. It is kind of the corollary of the YAGNI principle. This principle should push you to do little things but do it perfectly. In my current team, we are working on a system that creates price tags in various formats and with an extraordinary number of options. It makes the system pretty hard to maintain and when a new need comes, it takes weeks to put it in production. Happily, we are working on a new project trying to streamline what is mandatory. Be critical of new needs. Will this actually serve users and does it belong to your app’s domain?
 
-    this.intro = `This is a car runs at
-      ${speed}.`;
-  }
-}
+## Conclusion
 
-for (let num of [1, 2, 3]) {
-  console.log(num + 0b111110111);
-}
+I introduced four principles which can finally be summarized in two. First, be regular: repetitive things should be done the same way and try to improve the bad things little by little. Then do only the bare essentials but do it the best you can. The other important message of the article is to copy the principles that you believe in. Bringing these principles into a team will most likely help your colleagues.
 
-function $initHighlight(block, flags) {
-  try {
-    if (block.className.search(/\bno\-highlight\b/) != -1)
-      return processBlock(block.function, true, 0x0F) + ' class=""';
-  } catch (e) {
-    /* handle exception */
-    var e4x =
-        <div>Example
-            <p>1234</p></div>;
-  }
-  for (var i = 0 / 2; i < classes.length; i++) {
-  // "0 / 2" should not be parsed as regexp
-    if (checkCondition(classes[i]) === undefined)
-      return /\d+[\s/]/g;
-  }
-  console.log(Array.every(classes, Boolean));
-}
+## Links
 
-export  $initHighlight;
-```
-
-#### Vero fugiat corrupti possimus sit voluptatem eos
-
-* List Element 1
-  * List Element 1-1
-  * List Element 1-2
-    * List Element 1-2-1
-    * List Element 1-2-2
-      * List Element 1-2-2-1
-    * List Element 1-2-3
-  * List Element 1-3
-* List Element 2
-
-### Porro et saepe alias ullam voluptatibus ut est
-
-Corrupti quia qui eaque. Et qui rerum qui dolores. Quasi doloribus ut omnis. Libero laudantium libero placeat dignissimos dolor provident ratione. 
-Dignissimos ut consequatur iste. Iusto rerum dignissimos labore. Vel officiis quisquam quos est enim tenetur. Facilis temporibus error nisi. 
-
-Incidunt illo voluptatem ad. Sit qui dolorem quas et ut earum eum tenetur. Qui rerum temporibus temporibus quibusdam. Aliquid delectus quae repudiandae illo rerum. Amet ipsa quia placeat consectetur temporibus facere dolores adipisci pariatur. Quo qui voluptatibus non.
-
-## Eum eveniet optio neque
-
-### Est excepturi quia molestiae aut
-
-Corrupti quia qui eaque. Et qui rerum qui dolores. Quasi doloribus ut omnis. Libero laudantium libero placeat dignissimos dolor provident ratione. 
-Dignissimos ut consequatur iste. Iusto rerum dignissimos labore. Vel officiis quisquam quos est enim tenetur. Facilis temporibus error nisi. 
-
-Incidunt illo voluptatem ad. Sit qui dolorem quas et ut earum eum tenetur. Qui rerum temporibus temporibus quibusdam. Aliquid delectus quae repudiandae illo rerum. Amet ipsa quia placeat consectetur temporibus facere dolores adipisci pariatur. Quo qui voluptatibus non.
-
-### Maiores tempora repellendus et
-
-Corrupti quia qui eaque. Et qui rerum qui dolores. Quasi doloribus ut omnis. Libero laudantium libero placeat dignissimos dolor provident ratione. 
-Dignissimos ut consequatur iste. Iusto rerum dignissimos labore. Vel officiis quisquam quos est enim tenetur. Facilis temporibus error nisi. 
-
-Incidunt illo voluptatem ad. Sit qui dolorem quas et ut earum eum tenetur. Qui rerum temporibus temporibus quibusdam. Aliquid delectus quae repudiandae illo rerum. Amet ipsa quia placeat consectetur temporibus facere dolores adipisci pariatur. Quo qui voluptatibus non.
+- [Code Simplicity by Max Kanat-Alexander on Goodreads](https://www.goodreads.com/book/show/13234063-code-simplicity)
+- [Los 11 caminos al goal by Eduardo Rojas Rojas on Goodreads](https://www.goodreads.com/book/show/25312357-marcelo-bielsa-los-11-caminos-al-gol)
+- [Photo by Kelly Lacy from Pexels](https://www.pexels.com/@km-l-1179532/)
