@@ -35,4 +35,3 @@ I introduced four principles which can finally be summarized in two. First, be r
 
 - [Code Simplicity by Max Kanat-Alexander on Goodreads](https://www.goodreads.com/book/show/13234063-code-simplicity)
 - [Los 11 caminos al goal by Eduardo Rojas Rojas on Goodreads](https://www.goodreads.com/book/show/25312357-marcelo-bielsa-los-11-caminos-al-gol)
-- [Photo by Kelly Lacy from Pexels](https://www.pexels.com/@km-l-1179532/)
